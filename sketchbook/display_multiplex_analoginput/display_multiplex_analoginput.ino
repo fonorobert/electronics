@@ -3,6 +3,7 @@
 #include "button.h"
 
 int pin_order[7] = {9,2,3,4,5,6,7};
+//A,B,C,D,E,F,G
 
 int pot_pin = A0;
 int light_pin = A1;
@@ -36,7 +37,7 @@ void loop(){
       break;
     case 1:
       value = analogmeter(light_pin, scale);
-      break;    
+      break;
   }
   writeNumber(value, pin_order, ground, timer);
 }

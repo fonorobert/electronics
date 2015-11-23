@@ -15,6 +15,7 @@ void blinkLight(int pinNum, int timeDelay, int repeats){
 }
 
 void red(){
+  blinkLight(yelPin, 400, 3);
   digitalWrite(redPin, HIGH);
   digitalWrite(yelPin, LOW);
   digitalWrite(grePin, LOW);
@@ -33,7 +34,6 @@ void green(){
 }
 
 void yellow(){
-  blinkLight(grePin, 400, 3);
   digitalWrite(redPin, LOW);
   digitalWrite(yelPin, HIGH);
   digitalWrite(grePin, LOW);
@@ -45,7 +45,7 @@ void setup(){
   pinMode(redPin, OUTPUT);
   pinMode(yelPin, OUTPUT);
   pinMode(grePin, OUTPUT);
-  
+
   //Initial light is red
   digitalWrite(redPin, HIGH);
 }
@@ -53,7 +53,7 @@ void setup(){
 void loop(){
   int button = digitalRead(butPin);
 
-  
+
   if(button == LOW){
     digitalWrite(conPin, HIGH);
     delay(500);

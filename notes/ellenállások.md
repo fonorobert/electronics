@@ -10,12 +10,14 @@ Tehát akkor egy kupacban:
 
 - Az ellenállások soros kapcsolásakor:
 
-      U = U1 + U2
-      I = I1 = I2
+  ```
+  U = U1 + U2
+  I = I1 = I2
+  ```
 
 - Az ellenállások párhuzamos kapcsolásakor:
 
   ```
-  U =U1 = U2
+  U = U1 = U2
   I = I1 + I2
   ```
